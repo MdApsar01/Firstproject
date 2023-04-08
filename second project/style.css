@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0px auto;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header-wrap ul li a{
+     color: #ffffff;
+}
+
+header{
+    background-color: blueviolet;
+    color:#ffffff;
+    padding: 20px 0px;
+    font-size: 20px;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-wrap h4{
+    font-size: 24px;
+}
+.header-wrap ul{
+    display: flex;
+    gap: 50px;
+}
+.banner-wrap{
+    display: flex;
+    align-items: center;
+    padding: 90px 0px;
+    flex-wrap: wrap;
+    
+}
+.banner-wrap img{
+    width: 100%
+}
+.banner-wrap > div{
+    width: 50%;
+}
+.banner-wrap h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+    
+}
+.banner-wrap h1 > span{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.banner-wrap h1 > span:last-child span{
+    color: blueviolet;
+}
+.banner-wrap p{
+    width: 70%;
+    line-height: 2;
+    margin-bottom: 20px ;
+    width: auto;
+}
+.banner-wrap > div:first-child div{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.banner-wrap > div:first-child > div a:first-child{
+    background-color: orange;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 12px;
+}
+.banner-wrap > div:first-child > div a:first-child:hover{
+    box-shadow: 2px 2px 8px 1px orange;
+}
+
+.banner-wrap > div:first-child > div a:last-child{
+    color: black;
+}
+.role{
+   display: flex;
+   gap: 30px;
+}
+.role >div{
+    color: white;
+}
+.My-jobs h1{
+    padding-bottom:40px ;
+    font-size: 40px;
+    font-weight: 600;
+}
+.role >div:nth-child(1){
+    background-color:rgb(23, 67, 40);
+    border-radius: 15px;
+}
+.role >div:nth-child(2){
+    background-color:rgb(126, 31, 160);
+    border-radius: 15px;
+}
+.role >div:last-child{
+    background-color:rgb(128, 75, 6);
+    border-radius: 15px;
+}
+.role >div>img{
+    padding: 15px;
+    padding-bottom: 0px;
+}
+.role>div>div{
+    padding: 15px;
+}
+.role>div>div h2{
+   margin-bottom:8px;
+}
+.role>div>p{
+    padding: 0px 15px;
+}
+.role>div>div:nth-of-type(2){
+    color: aliceblue;
+    display: flex;
+    gap: 20px;
+}
+.role>div>div:last-child a{
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+.role>div>div:last-child span{
+    padding-top: 8px;
+}
+.role>div>div:last-child a:hover{
+    background-color: orange;
+    transition: 0.3s;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: lightgray;
+}
+
+@media only screen and (max-width:1200px) {
+    .header-wrap{
+        flex-direction:column ;
+    }
+    
+} 
+
+ @media only screen and (max-width:992px){
+    .banner-wrap{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-wrap > div{
+        width: 100%;
+    }
+    .banner-wrap h1{
+        font-size: 32px;
+        
+    }
+    .banner-wrap h1 span{
+        margin-bottom: 0px;
+        display: inline-block;
+    }
+    .banner-wrap > div:first-child div{
+        justify-content: center;
+    }
+    .banner-wrap>div:last-child img{
+        width: 350px;
+       height: 300px;      
+       width: 100%;
+       height: 100%;
+    }
+    .role{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .role>div:first-child,.role>div:nth-child(2){
+        width: 45%;
+    }
+    .role>div:last-child{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:780px){
+    .role>div:first-child,.role>div:nth-child(2),
+    .role>div:last-child{
+        width: 100%;
+    }
+    
+}
