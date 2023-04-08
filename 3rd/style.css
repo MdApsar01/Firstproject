@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+.container{
+    max-width: 1125px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    padding: 10px 0px;
+    
+}
+.header-wrap h3,a{
+    color: white;
+}
+.header-wrap h3{
+    font-size: 25px;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-wrap ul{
+    display: flex;
+    gap: 25px;
+}
+
+.banner-wrap{
+    padding: 80px 0px;
+    color: #ffffff;
+    text-align: center;
+}
+.banner-wrap h1{
+    font-size: 95px;
+    margin-bottom: 15px;
+}
+.banner-wrap h1 span{
+    display: block;
+}
+.banner-wrap p{
+    width: 50%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+.btn a{
+    background-color: #231A36;
+    display: inline-flex;
+    padding: 10px 30px;
+    border-radius: 50px;
+    gap: 20px;
+    transition: all 0.4s;
+    margin-top: 20px;
+}
+.btn img{
+    transition: 0.4s;
+}
+.btn a:hover{
+    background-color: #ff6f00;
+}
+.btn a:hover img{
+    transform: rotate(360deg);
+}
+.header-banner-wrap{
+    background: url(./img/banner/bg.png)no-repeat center  ;
+    background-size: cover;
+}
+.trust{
+    padding: 80px 0px;
+}
+.trust p{
+    text-align: center;
+}
+.trust-wrap>div{
+    width: 120px;
+}
+.trust-wrap>div img{
+    width: 100%;
+}
+.trust-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.social{
+    padding: 80px 0px;
+}
+.social .container{
+    max-width: 900px;
+}
+.section-heading h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.section-heading p{
+    text-align: center;
+    width: 70%;
+    margin: 10px auto;
+}
+.section-heading{
+    margin-bottom: 50px;
+}
+.social-wrap>div:not(.social-wrap>div:last-child){
+    margin-bottom: 40px;
+}
+.sw-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sw-section>div{
+    width: 50%;
+    margin-bottom: 30px;
+}
+.sw-section>div:last-child{
+    text-align: right;
+}
+.sw-section>div h3{
+    margin: 10px 0px;
+    font-size: 30px;
+}
+.sw-section>div>div:last-child {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.sw-section>div>div a{
+    color: gray;
+}
+.social-wrap>div:nth-child(2)>div:first-child{
+    order: 2;
+}
+.social-wrap>div:nth-child(2)>div:last-child{
+    order: 1;
+    text-align: left;
+}
+
+.social-wrap>div:first-child>div:first-child>p:first-child{
+    color: #B33CDB;
+}
+.social-wrap>div:nth-child(2)>div:first-child>p:first-child{
+    color: #FBBA33;
+}
+.social-wrap>div:last-child>div:first-child>p:first-child{
+    color: #DE2879;
+}
+
+
+.achievements{
+    background-color: #231A36;
+    color: #ffffff;
+    padding: 80px 0px;
+}
+.ac-heading{
+    padding: 0px 20px;
+}
+.ac-heading h2{
+    text-align: center;
+    font-size: 50px;
+    margin: 5px auto;
+}
+.ac-heading h2,span{
+    display: block;
+}
+.ac-heading p{
+    text-align: center;
+    font-size: 18px;
+    width: 70%;
+    margin: 5px auto;
+    color: #C0C0C0;
+}
+.ac-wrap{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ac-wrap h3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.ac-wrap>div>span{
+    color: #C0C0C0;
+}
+@media only screen and (max-width:768px){
+    .banner-wrap h1{
+        font-size: 50px;
+    }
+    .banner-wrap h1 span{
+        display: inline-block;
+    }
+    .banner-wrap p{
+        width: 100%;
+    }
+    .sw-section>div{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .sw-section>div:last-child {
+        text-align: center !important;
+    }
+    .sw-section>div>div:last-child{
+        justify-content: center;
+    }
+    .social-wrap>div:nth-child(2)>div:first-child{
+        order: 1;
+    }
+    .social-wrap>div:nth-child(2)>div:last-child{
+        order: 2;
+    }
+
+}
+@media only screen and (max-width: 992px){
+    .trust-wrap>div{
+        width: 80px;
+    }
+    .ac-heading h2 span{
+        display: inline;
+    }
+}
+@media only screen and (max-width:578px){
+    .header-wrap{
+        flex-direction: column;
+    }
+    .trust-wrap>div{
+        width: 30%;
+    }
+    .ac-wrap>div{
+        width: 50%;
+        text-align: center;
+    }
+
+}
